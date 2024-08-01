@@ -8,5 +8,6 @@ verbose: $(TEX_FILES)
 	latexmk -pv $(TEX_MAIN)
 clean:
 	latexmk -C
+	rm -f *.synctex\(busy\) *.fls *.synctex.gz *.fls *.log *.xdv *.aux *.fdb_latexmk *.out
 .PHONY:
 	clean verbose
